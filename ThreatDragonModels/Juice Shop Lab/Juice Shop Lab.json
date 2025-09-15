@@ -136,7 +136,7 @@
                   "id": "8c939b0e-67cc-4515-bb92-463d2c957905",
                   "title": "New STRIDE threat",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Cross-Site Request Forgery (CSRF)",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
@@ -147,9 +147,16 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {

@@ -138,7 +138,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "",
+                  "description": "CSRF is possible due to lack of the specific header",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -151,7 +151,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "description": "This would increase security of authentication",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -160,7 +160,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 6,
+                "spoofing": 8,
                 "repudiation": 0
               }
             }
@@ -918,7 +918,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
-                  "description": "",
+                  "description": "XSS is possible due to lack of specific header",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -927,7 +927,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 3,
+                "tampering": 4,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }

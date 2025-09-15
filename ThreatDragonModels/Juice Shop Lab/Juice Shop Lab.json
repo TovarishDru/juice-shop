@@ -1102,10 +1102,23 @@
                   "new": false,
                   "number": 9,
                   "score": ""
+                },
+                {
+                  "id": "70e6cd18-436f-4618-a276-54011aec0ac8",
+                  "title": "Missing Web Application Firewall (WAF) ",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 2,
                 "informationDisclosure": 2,
                 "denialOfService": 0
               }
@@ -1241,6 +1254,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "TovarishDru",
-    "threatTop": 9
+    "threatTop": 10
   }
 }

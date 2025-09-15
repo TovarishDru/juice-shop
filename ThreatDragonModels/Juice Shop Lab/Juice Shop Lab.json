@@ -604,13 +604,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -852,7 +845,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTP",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -865,7 +858,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "HTTP"
             ],
             "id": "e76682ea-1313-4d35-b02d-3f9f79ecce2d",
             "source": {
@@ -875,7 +868,8 @@
             "target": {
               "cell": "27d4a19e-6530-45bb-b4d9-fd6a14370d42",
               "port": "09c77d95-cafb-4c6f-89cf-a001a5c76625"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -897,7 +891,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -910,7 +904,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              ""
             ],
             "id": "e9ccd577-4907-4882-af23-f190336caf28",
             "source": {
@@ -942,7 +936,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTPS",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -955,7 +949,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "HTTPS"
             ],
             "id": "37f7ab79-fb72-4230-8816-aff9baad6cf2",
             "source": {

@@ -31,13 +31,14 @@
                 "text": "User (Browser)"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "7905ce95-c2bb-4994-a4a0-88f2a9cc2f31",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User (Browser)",
@@ -129,38 +129,11 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "8c939b0e-67cc-4515-bb92-463d2c957905",
-                  "title": "Cross-Site Request Forgery (CSRF)",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "CSRF is possible due to lack of the specific header",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                },
-                {
-                  "id": "e0d5e660-875c-43de-b91e-3014c71cb02d",
-                  "title": "Missing Two-Factor Authentication",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "This would increase security of authentication",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
-                "spoofing": 10,
+                "spoofing": 8,
                 "repudiation": 0
               }
             }
@@ -186,6 +159,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -269,7 +243,6 @@
               ]
             },
             "id": "d9c2003f-7bd1-4b5c-a3c9-3a643fba405d",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Attacker (Internet)",
@@ -303,6 +276,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -386,7 +360,6 @@
               ]
             },
             "id": "916113e4-0570-4adb-ab25-6757049de9aa",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Reverse Proxy",
@@ -423,6 +396,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -506,7 +480,6 @@
               ]
             },
             "id": "27d4a19e-6530-45bb-b4d9-fd6a14370d42",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Juice Shop",
@@ -568,6 +541,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -651,7 +625,6 @@
               ]
             },
             "id": "f5663a5e-55a0-4286-b8b7-a5893fbf15eb",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Persistent Storage",
@@ -685,13 +658,14 @@
             },
             "attrs": {
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -775,7 +749,6 @@
               ]
             },
             "id": "433ed0b4-b220-4646-89dd-e2a347d29908",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -783,41 +756,20 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "44350455-aa6d-451e-9e01-48b53c60d096",
-                  "title": "Server-Side Request Forgery",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "The module does requests, ulimited by access rules",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 11,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 1,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -875,8 +827,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -897,28 +848,14 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "0fa28769-6b4a-4243-8476-6a6b9419c327",
-                  "title": "Cross-Site Scripting (XSS)",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "XSS is possible due to lack of specific header",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
-                "tampering": 5,
+                "tampering": 4,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -991,8 +928,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1013,29 +949,15 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "808dd92d-843b-492a-bc15-fd84adc8a232",
-                  "title": "Unencrypted Communication",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "HTTPS would make the communication safe",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 8,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -1212,8 +1134,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1234,29 +1155,15 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "85f9606c-e247-46b5-8764-6bddb1ae7b2c",
-                  "title": "Missing Vault (Secret Storage) ",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "The configuration and integreation of the app lacks a secret storege",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 14,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },

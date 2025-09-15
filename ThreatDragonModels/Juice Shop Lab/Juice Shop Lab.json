@@ -19,14 +19,17 @@
         "cells": [
           {
             "position": {
-              "x": 170,
-              "y": 120
+              "x": 161.25,
+              "y": 110
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 130,
+              "height": 70
             },
             "attrs": {
+              "text": {
+                "text": "User (Browser)"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -121,7 +124,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "User (Browser)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -133,14 +136,17 @@
           },
           {
             "position": {
-              "x": 170,
-              "y": 415
+              "x": 161.25,
+              "y": 410
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 130,
+              "height": 70
             },
             "attrs": {
+              "text": {
+                "text": "Attacker (Internet)"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -235,7 +241,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Attacker (Internet)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -781,7 +787,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -802,12 +809,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0fa28769-6b4a-4243-8476-6a6b9419c327",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Cross-Site Scripting (XSS)",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTPS\n"
@@ -1033,6 +1059,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "TovarishDru",
-    "threatTop": 0
+    "threatTop": 1
   }
 }

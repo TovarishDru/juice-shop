@@ -134,11 +134,11 @@
               "threats": [
                 {
                   "id": "8c939b0e-67cc-4515-bb92-463d2c957905",
-                  "title": "New STRIDE threat",
+                  "title": "Cross-Site Request Forgery (CSRF)",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Cross-Site Request Forgery (CSRF)",
+                  "description": "",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -147,7 +147,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 4,
                 "repudiation": 0
               }
             }
@@ -545,11 +545,13 @@
                 "text": "Persistent Storage"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -646,13 +648,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "d3f156c5-9e30-4abd-99a6-83bd3679e912",
+                  "title": "Missing Vault (Secret Storage)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -857,33 +879,20 @@
               "threats": [
                 {
                   "id": "0fa28769-6b4a-4243-8476-6a6b9419c327",
-                  "title": "New STRIDE threat",
+                  "title": "Cross-Site Scripting (XSS)",
                   "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
-                  "description": "Cross-Site Scripting (XSS)",
+                  "description": "",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
                   "score": ""
-                },
-                {
-                  "id": "6fe3c460-6c58-4a65-b099-5ce422753423",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 2,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -956,7 +965,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -977,12 +987,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "808dd92d-843b-492a-bc15-fd84adc8a232",
+                  "title": "Unencrypted Communication",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "No suggestions available for this context. Add one manually please",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP"
@@ -1033,7 +1062,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1054,12 +1084,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "7bb58866-8012-4cba-899a-5ba56a7e483f",
+                  "title": "Unencrypted Communication",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "No suggestions available for this context. Add one manually please",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP"
@@ -1072,7 +1121,8 @@
             "target": {
               "cell": "27d4a19e-6530-45bb-b4d9-fd6a14370d42",
               "port": "09c77d95-cafb-4c6f-89cf-a001a5c76625"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "trust-boundary-curve",
@@ -1105,6 +1155,85 @@
                 "y": 320
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "fa1e019a-7984-4838-bfc7-a2a794228622",
+                  "title": "Unencrypted Technical Asset (at rest)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "45c3c052-7ef3-48db-a255-bf027d5151fa",
+                  "title": "Unencrypted Communication",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 4,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "7164fcbd-23b5-487e-b3dc-cb76358e7064",
+            "source": {
+              "cell": "27d4a19e-6530-45bb-b4d9-fd6a14370d42",
+              "port": "3073a8ce-05b6-4a01-8075-06e46557681a"
+            },
+            "target": {
+              "x": 970,
+              "y": 370
+            },
+            "vertices": []
           }
         ],
         "description": "STRIDE diagram for Juice Shop"
@@ -1112,6 +1241,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "TovarishDru",
-    "threatTop": 4
+    "threatTop": 9
   }
 }

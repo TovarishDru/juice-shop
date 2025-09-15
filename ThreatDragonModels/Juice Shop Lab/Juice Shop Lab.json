@@ -492,6 +492,9 @@
               "height": 80
             },
             "attrs": {
+              "text": {
+                "text": "Persistent Storage"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -589,7 +592,7 @@
             "zIndex": 5,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "Persistent Storage",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -601,6 +604,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {

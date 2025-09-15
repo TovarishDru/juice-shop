@@ -139,7 +139,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "CSRF is possible due to lack of the specific header",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
@@ -152,7 +152,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "This would increase security of authentication",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
@@ -160,7 +160,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 8,
+                "spoofing": 10,
                 "repudiation": 0
               }
             }
@@ -919,7 +919,7 @@
                   "severity": "High",
                   "type": "Tampering",
                   "description": "XSS is possible due to lack of specific header",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -927,7 +927,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 4,
+                "tampering": 5,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1131,7 +1131,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "No suggestions available for this context. Add one manually please",
+                  "description": "HTTPS protocol is needed to make commuication safe",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1144,17 +1144,30 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Tampering",
-                  "description": "",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "There is no firewall, the infrastructure is acceccible from anywhere",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
                   "score": ""
+                },
+                {
+                  "id": "8b9a7575-ea93-499d-9766-60b2a3e7ab7f",
+                  "title": "Missing Authentication",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "The infrastructure is accessible from outside",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
-                "informationDisclosure": 2,
+                "tampering": 4,
+                "informationDisclosure": 6,
                 "denialOfService": 0
               }
             },
@@ -1289,6 +1302,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "TovarishDru",
-    "threatTop": 12
+    "threatTop": 13
   }
 }

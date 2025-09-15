@@ -746,7 +746,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTP",
+              "name": "HTTPS",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -759,7 +759,7 @@
               "threats": []
             },
             "labels": [
-              "HTTP"
+              "HTTPS"
             ],
             "id": "959ac5ae-d941-48f7-8ef8-ddf5e6789959",
             "source": {
@@ -797,7 +797,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTP\n",
+              "name": "HTTPS\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -810,7 +810,7 @@
               "threats": []
             },
             "labels": [
-              "HTTP"
+              "HTTPS\n"
             ],
             "id": "58589fa9-4e78-4a18-a18c-25020b9db179",
             "source": {

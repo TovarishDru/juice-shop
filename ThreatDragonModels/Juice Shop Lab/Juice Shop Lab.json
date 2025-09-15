@@ -367,7 +367,7 @@
           },
           {
             "position": {
-              "x": 708,
+              "x": 908,
               "y": 250
             },
             "size": {
@@ -375,6 +375,9 @@
               "height": 120
             },
             "attrs": {
+              "text": {
+                "text": "Juice Shop"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -469,8 +472,8 @@
             "zIndex": 4,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
-              "description": "",
+              "name": "Juice Shop",
+              "description": "Docker Container, v19.0.0",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -484,7 +487,7 @@
           },
           {
             "position": {
-              "x": 994,
+              "x": 1194,
               "y": 405
             },
             "size": {
@@ -608,7 +611,7 @@
           },
           {
             "position": {
-              "x": 994,
+              "x": 1194,
               "y": 120
             },
             "size": {
@@ -845,97 +848,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTP",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "HTTP"
-            ],
-            "id": "e76682ea-1313-4d35-b02d-3f9f79ecce2d",
-            "source": {
-              "x": 570,
-              "y": 310
-            },
-            "target": {
-              "cell": "27d4a19e-6530-45bb-b4d9-fd6a14370d42",
-              "port": "09c77d95-cafb-4c6f-89cf-a001a5c76625"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "e9ccd577-4907-4882-af23-f190336caf28",
-            "source": {
-              "x": 840,
-              "y": 310
-            },
-            "target": {
-              "cell": "f5663a5e-55a0-4286-b8b7-a5893fbf15eb",
-              "port": "2fe97c0b-7231-45ca-b7e2-84511daa2b4c"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "HTTPS",
               "description": "",
               "outOfScope": false,
@@ -953,13 +865,167 @@
             ],
             "id": "37f7ab79-fb72-4230-8816-aff9baad6cf2",
             "source": {
-              "x": 840,
+              "x": 1040,
               "y": 310
             },
             "target": {
               "cell": "433ed0b4-b220-4646-89dd-e2a347d29908",
               "port": "09c77d95-cafb-4c6f-89cf-a001a5c76625"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "HTTP"
+            ],
+            "id": "010a7a58-7569-4547-b33b-5e3f5d7539c9",
+            "source": {
+              "x": 1040,
+              "y": 310
+            },
+            "target": {
+              "cell": "f5663a5e-55a0-4286-b8b7-a5893fbf15eb",
+              "port": "2fe97c0b-7231-45ca-b7e2-84511daa2b4c"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Internet"
+            ],
+            "id": "472e0871-617e-4aeb-8c57-1512d4a2b851",
+            "source": {
+              "x": 370,
+              "y": 40
+            },
+            "target": {
+              "x": 370,
+              "y": 580
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "HTTP"
+            ],
+            "id": "0b75ebdd-9837-43dd-a019-dc73135694dd",
+            "source": {
+              "cell": "916113e4-0570-4adb-ab25-6757049de9aa",
+              "port": "b3560355-b8c5-4727-b461-7ccc6a60bc2d"
+            },
+            "target": {
+              "cell": "27d4a19e-6530-45bb-b4d9-fd6a14370d42",
+              "port": "09c77d95-cafb-4c6f-89cf-a001a5c76625"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Container Network",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Container Network"
+            ],
+            "id": "344dd866-da57-40f5-b286-d437bde889c7",
+            "source": {
+              "x": 660,
+              "y": 40
+            },
+            "target": {
+              "x": 670,
+              "y": 580
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 320
+              }
+            ]
           }
         ],
         "description": "STRIDE diagram for Juice Shop"
